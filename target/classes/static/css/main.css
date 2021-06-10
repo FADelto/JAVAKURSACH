@@ -1,0 +1,76 @@
+.gridauto {
+    margin-top: 3%;
+    margin-left: 10%;
+    display: grid;
+  grid-template-areas: "text content"  
+                       "text2 content"
+                       "text3 content";
+    grid-template-rows: 40px
+                        30px
+                        auto;
+    grid-template-columns: 320px auto;
+}
+.photo { 
+  grid-area: content; 
+}
+.text { 
+  grid-area: text;
+    font-size: 30px;
+    font-weight: bold;
+}
+.text2 {
+    grid-area: text2;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+.text3 {
+  grid-area: text3;
+    margin-left: 5%;
+}
+.gridmain {
+    margin-top: 3%;
+    margin-left: 20%;
+    display: grid;
+    grid-template-areas: "photo text11"
+                       "photo text22"
+                       "photo gpap"
+                       "photo text33"
+                        "photo text4";
+    grid-template-rows: 50px
+                        50px
+                        60px
+                        60px
+                        auto;
+    grid-template-columns: 450px 500px;
+}
+.content {
+    grid-area: photo;
+}
+.text11 {
+    grid-area: text11;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10%;
+}
+.text22 {
+    grid-area: text22;
+    margin-top: 3%;
+    font-weight: bold;
+    margin-left: 10%;
+}
+.gpap {
+    grid-area: gpap;
+    margin-left: 15%;
+}
+.text33 {
+    grid-area: text33;
+    margin-top: 3%;
+    font-weight: bold;
+    margin-left: 10%;
+}
+.text4 {
+    grid-area: text4;
+    margin-top: 3%;
+    font-weight: bold;
+    margin-left: 10%;
+}
